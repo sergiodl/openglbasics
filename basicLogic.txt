@@ -1,0 +1,19 @@
+#include <somelibrary>
+
+int main() {
+	createWindow(title, width, height);
+	createOpenGLContext(settings);
+	
+	while(windowOpen) {
+		while(event = newEvent()) {
+			handleEnvet(event);
+		}
+
+		updateScene();
+
+		drawGraphics();
+		presentGraphics();
+	}
+
+	return 0;
+}
